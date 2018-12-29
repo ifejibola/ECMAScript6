@@ -1,0 +1,43 @@
+<!-- Using let keyword, Create some code that's going to render 45 divs onto the page using a for loop -->
+<!-- Let is a great keyword for enforcing block scoping  -->
+<!-- #first set up html and css -->
+<!DOCTYPE html>
+<html class="no-js"> 
+    <head>
+        <style type="text/css">
+            section > div {
+                height: 100px;
+                width: 100px;
+                background-color: red;
+                float:left;
+                margin: 3px;
+                cursor: pointer;
+            }
+        </style>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <header>
+            <h1>Click on a box</h1>
+        </header>
+        <!-- Place all div in section tag -->
+        <section></section>
+
+        <!-- Create 45 divs with for loop -->
+        <script type="text/javaScript">
+            for(let i=0; i<45; i++){
+                var div = document.createElement('div');
+                div.onclick = function(){
+                    alert("You clicked on a box #" + i);
+                };
+                // Where you want to place all 45 div tags.
+                document.getElementsByTagName('section')[0].appendChild(div);
+            }
+        </script>
+    </body>
+</html>
