@@ -1,10 +1,10 @@
-// Use: Fetches api of astronuts in space using a Promise
+//Use: To pull api using promise
 const customPromises = ()=>{
-
+    console.log('')
     //Function that returns promise
     const spacePeople = ()=>{
         return new Promise((resolves, rejects)=>{
-            const api = 'http://api.opne-notify.org/astros.json';
+            const api = 'http://api.open-notify.org/astros.json';
             const request = new XMLHttpRequest();
             request.open('GET', api);
             request.onload = ()=>{

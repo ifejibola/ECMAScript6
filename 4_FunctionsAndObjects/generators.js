@@ -30,7 +30,7 @@ const generators = () =>{
             yield arr[i];
         }
     }
-
+    // pass an array to eachItem
     var letters = eachItem(["a", "b", "c", "d", "e", "f", "g"]);
 
     // print to the console every 500 mili second, set interval takes a function, and duration args

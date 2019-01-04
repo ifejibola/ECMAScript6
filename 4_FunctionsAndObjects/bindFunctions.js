@@ -27,13 +27,12 @@ const bind = function(){
         // OR with arrow function, shorten code  
         printActions(){
             //Look into each of the items in the actions array object
-            this.actions.forEach((action)=>{
+            this.actions.forEach((action) =>{
                 var str = this.first + " likes to "  + action;
                 console.log(str);
             });
         }
     };
-
     person.printActions();
 }
 
